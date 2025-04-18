@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, blueviolet, deeppink);
+}
+
+.container {
+    margin: 50px auto;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px black;
+}
+
+.container img {
+    height: inherit;
+    width: inherit;
+    transition: all 1s;
+}
+
+.container .text {
+    position: absolute;
+    width: 50%;
+    top: 0px;
+    left: 0px;
+    color: yellow;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: perspective(400px) rotateX(90deg);
+    transform-origin: top;
+    transition: all 1s;
+}
+
+.container:hover .text {
+    transform: perspective(400px) rotateX(0deg);
+}
+
+.container img:hover {
+    transform: scale(1.5, 1.5);
+}
+v
